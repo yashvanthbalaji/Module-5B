@@ -11,18 +11,28 @@ To write a **NumPy** program that deletes the second column from a given 2D arra
 5. **Display Result**: Print the updated array with the replaced column.
 
 ## 🧾 Program
-
 ```
 import numpy as np
-import pandas as pd
-exam_data=eval(input())
-lab=np.array(eval(input()))
-df=pd.DataFrame(exam_data,index=lab)
-print(df)
+x=eval(input())
+y=eval(input())
+arr1=np.array(x)
+arr2=np.array(y)
+print("Printing Original array")
+print(arr1)
+deleting=np.delete(arr1,1,axis=1)
+print("Array after deleting column 2 on axis 1")
+print(deleting)
+inserting=np.insert(deleting,1,arr2,axis=1)
+print("Array after inserting column 2 on axis 1")
+print(inserting)
 ```
 
+
 ## Output
-<img width="1182" height="312" alt="image" src="https://github.com/user-attachments/assets/b2da9b40-3215-433a-b169-69e69b7cf48b" />
+
+<img width="750" height="476" alt="Screenshot 2025-11-13 095245" src="https://github.com/user-attachments/assets/7fd5ac76-eeb5-408a-810b-ec16e26415ee" />
+
 
 ## Result
-Thus, the program to create and display a Pandas DataFrame with custom index labels was executed successfully.
+
+Thus the python program has been executed successfully.
